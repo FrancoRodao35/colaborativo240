@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ingreso modificado usando de referencia la pasada clase</title>
+    <script src="\colaborativo240\js\ingreso.js"></script>
 </head>
 <body>
     <h2 class="alert alert-danger">Ingresa tus datos</h2>
-    <form action="https://crudcrud.com/api/792ef5852781402baf93259ccf9138c2/colaborativo" method="post">
+    <div class="container">
+        <div class="form_group">
 
-<input type="text" name="nombre"><input/>
-
-
-
-    </form>
+            <label for="nombre">Nombre<input type="text" class="form_control" id="nombre"></label>
+            <br>
+            <label for="edad">Edad<input type="number" name="edad" class="form-control" id="edad"></label>
+            <br>
+            <label for="correo">Correo <input type="email" id="correo" name="correo" class="form-control"></label>
+            <br>
+            <button id="enviar" class="btn btn-primary">Enviar</button>
+        </div>
+    </div>
 </body>
 </html>
